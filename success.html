@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="behavior.js" defer>  </script>
+</head>
+
+<br> <br> <br>
+<img class="imgAccept" src="accept.png"> <br> <br>
+
+<div class="acceptPage">
+
+<span id="name"></span> ,thanks for your request! <br>
+We will call you soon to schedule a test drive for: <br>
+<span id = checkedCarsList></span>
+
+</div>
+
+<body>
+
+  <script>
+  document.getElementById("name").innerHTML=localStorage.getItem("name");
+  document.getElementById("checkedCarsList").innerHTML=localStorage.getItem("carList");
+  </script>
+
+
+</body>
+</html>

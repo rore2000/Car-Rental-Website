@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <title>Test drive request</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="behavior.js" defer>  </script>
+
+  <!--  <script src="/HW2/behavior.js" defer>  </script> -->
+</head>
+
+<body>
+
+<img class="imgCar" src="car.jpg">
+
+<div class="container">
+
+  <form name = "carForm" action="success.php" onsubmit="return validateInpute()" method="post">
+
+    <label class="bold" for="name">Name:</label> <br>
+    <input type="text" id="name" name="name" placeholder="Roaa" onblur="removeName()" > <span class="errorMsg" id='nameError'>  </span> <br> <br>
+
+    <label class="bold" for="phone_number">Phone number:</label> <br>
+    <input type="tel" id="phone_number" name="phone_number" placeholder="05XXXXXXX" onblur="removePhone_number()"> <span class="errorMsg" id='phoneNumError'>  </span> <br> <br>
+
+
+   <label class="bold" >Age range:</label> <span class="errorMsg" id="ageError"></span > <br>
+  <input type="radio" id="18-25" name="age_range" value="18-25">
+  <label for="18-25">18-25</label><br>
+  <input type="radio" id="26-35" name="age_range" value="26-35">
+  <label for="26-35">26-35</label><br>
+  <input type="radio" id="36+" name="age_range" value="36+">
+  <label for="36+">35 or above </label><br> <br>
+
+  <label class="bold" >Choose car(s):</label> <span class="errorMsg" id='carError'>  </span> <br>
+  <input type="checkbox" id="BMW" name="car" value="BMW">
+  <label for="BMW">BMW</label><br>
+  <input type="checkbox" id="Chevrolet" name="car" value="Chevrolet">
+  <label for="Chevrolet">Chevrolet</label><br>
+  <input type="checkbox" id="Ferrari" name="car" value="Ferrari">
+  <label for="Ferrari">Ferrari</label> <br>
+  <input type="checkbox" id="Ford" name="car" value="Ford">
+  <label for="Ford">Ford</label> <br>
+  <input type="checkbox" id="Honda" name="car" value="Honda">
+  <label for="Ferrari">Honda</label> <br> <br>
+
+
+  <!-- <label for="submit">Submit</label><br> -->
+  <input  class="button" type="submit" id="submit" name="submit" >
+
+  <!-- <label for="reset">Reset</label><br> -->
+  <input class="button" type="reset" id="reset" name="reset" onclick="resetForm()"> <br>
+
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<requestLixt>
+
+<customer1>
+<name>roaa</name>
+<phone> 1234567890</phone>
+<age>22</age>
+
+<carsList>
+<car1>BMD</car1>
+<car2>Ferrari</car2>
+<car3>Honda</car3>
+</carsList>
+</customer1>
+
+<customer2>
+<name>ruba</name>
+<phone> 0987654321</phone>
+<age>26</age>
+<carsList>
+<car1>Chevrolet</car1>
+</carsList>
+</customer2>
+
+
+</requestLixt>
